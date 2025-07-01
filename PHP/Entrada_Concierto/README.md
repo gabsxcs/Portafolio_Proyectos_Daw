@@ -8,7 +8,7 @@ Este proyecto permite la **generación  de entradas de conciertos en formato PDF
 
 ---
 
-## 🛠 Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **PHP**
 - **[Doctrine ORM](https://www.doctrine-project.org/projects/orm.html)** – Mapeo objeto-relacional para manejo de base de datos.
@@ -18,7 +18,7 @@ Este proyecto permite la **generación  de entradas de conciertos en formato PDF
 
 ---
 
-## 🧪 Ejemplos de Generación desde el Navegador
+## Ejemplos de Generación desde el Navegador
 
 🔹 Generar **PDF** de una entrada por número de referencia:
 
@@ -36,7 +36,7 @@ Este proyecto permite la **generación  de entradas de conciertos en formato PDF
 
 
 
-## ⚠️ Problemas con la Generación de QR o Código de Barras
+## Problemas con la Generación de QR o Código de Barras
 
 Si al generar una entrada en PDF el **código QR** y/o el **código de barras** no se muestran correctamente y aparece una ❌ (X) en su lugar, probablemente se deba a un **problema de permisos en los directorios temporales** que utiliza `mPDF`.
 
