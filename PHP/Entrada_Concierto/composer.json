@@ -1,0 +1,26 @@
+{
+	"name" : "gabi/entrada-concierto",
+	"description" : "Generador entrada",
+	"type" : "project",
+	"require" : {
+		"doctrine/orm" : "3.3",
+		"symfony/cache" : "^7.2",
+		"mpdf/mpdf" : "^8.2",
+		"endroid/qr-code": "^6.0",
+		"picqer/php-barcode-generator": "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Evento\\Entity\\" : "src/Evento/Entity",
+			"Evento\\Repository\\" : "src/Evento/Repository",
+			"Evento\\Service\\" : "src/Service",
+			"Evento\\Controller\\" : "src/Evento/Controller",
+			"Evento\\Vista\\": "src/Evento/vista"
+		}
+	},
+	"authors" : [{
+			"name" : "gabriela",
+			"email" : "gabsxc.ss@gmail.com"
+		}
+	]
+}

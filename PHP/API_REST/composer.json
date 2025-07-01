@@ -1,0 +1,28 @@
+{
+	"name" : "gabi/micro-serveis",
+	"description" : "Activitat Microserveis",
+	"type" : "project",
+	"require" : {
+		"doctrine/orm" : "3.3",
+		"symfony/cache" : "^7.2",
+		"mpdf/mpdf": "^8.2",
+		"picqer/php-barcode-generator": "^3.2",
+		"endroid/qr-code": "^6.0",
+		"firebase/php-jwt": "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Evento\\Entity\\" : "src/Evento/Entity",
+			"Evento\\Repository\\" : "src/Evento/Repository",
+			"Evento\\Service\\" : "src/Service",
+			"Evento\\Controller\\" : "src/Evento/Controller",
+			"Evento\\Vista\\" : "src/Evento/vista",
+			"Evento\\Middleware\\": "src/Middleware"
+		}
+	},
+	"authors" : [{
+			"name" : "gabriela",
+			"email" : "gabsxc.ss@gmail.com"
+		}
+	]
+}

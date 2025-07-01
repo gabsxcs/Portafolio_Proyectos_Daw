@@ -1,0 +1,50 @@
+Esta es una explicación de como he organizado mi proyecto.
+
+Para esta actividad habían 3 objetos de negocio, Author, Theme y Phrase. Entonces, a partir de esos métodos he creado un modelo, una view y un controller para cada uno.
+
+Dentro de los views de cada objeto hay varios métodos con diferentes vistas, cada objeto tiene la vista principal que es show() que muestra la tabla con la lista de objetos.
+En segundo lugar, hay un showEditar que es una vista para un formulario para editar el objeto, y junto con eso hay un método de formEditar que es por si hay algún error, entonces que se muestren ahí.
+En tercer lugar, hay un showCrear que es la vista de un formulario para crear el objeto, y de la misma forma hay un formCrear que es para mostrar los errores en caso de haberlos.
+Y por último, en el objeto Author hay un método adicional que muestra una página con el nombre del autor seleccionado, con su descripción y su listado de frases.
+
+En los controladores está la lógica para mostrar cada una de estas vistas y el método form que procesa estos formularios, evalúa si tiene errores y regresa el error en caso de haber, y que hace el update o el create si todo está bien. Y en el show() de cada controller está la logica para hacer la paginación y la búsqueda con filtros.
+
+Luego están los modelos que es en donde están el crud para cada objeto, junto con otros métodos adicionales que fui añadiendo por necesidad y que están explicados en un comentario del código. En el constructor de cada modelo hago un condicional de que si la bbdd existe, se realiza un query de usar esa bbdd para que los metodos se ejecuten de forma correcta y no me salte error en mi página por hacer un 'use bbdd' cuando la tabla aun no existe.
+
+La lógica del xml para ser procesado y añadido en la base de datos también tiene su vista, modelo y controller. En la vista se muestra una página que, dependiendo de su has iniciado sesión o no, te muestra un mensaje. Y está el botón para hacer el procesamiento del xml, desde crear las tablas hasta el insertar los datos y que si todo sale bien te redirige a la página de frases. En el modelo están todos los métodos para el procesamiento junto con los métodos de crear y borrar tablas. Y en el controller se ejecutan estos métodos. En el modelo del xml se crea y se elimina la base de datos correspondiente.
+
+En cuanto a la gestión de conexión con la base de datos, debido a que las frases tenían una propia base de datos, he creado otro archivo xml de configuración con los datos de esta nueva base de datos, he creado un nuevo Database y una nueva clase config.
+
+Lista de archivos que he modificado y creado para esta actividad:
+
+-en classes/controller:
+	-XmlController.php
+	-AuthorController.php
+	-ThemeController.php
+	-PhrasesController.php
+
+-en classes/model:
+	-Author.php
+	-AuthorModel.php
+	-Themes.php
+	-ThemesModel.php
+	-Phrases.php
+	-PhrasesModel.php
+	-PDODatabase.php
+	-XmlModel.php
+
+-en classes/core:
+	-PDOConfig.php
+
+-en clases/view:
+	-AuthorView.php
+	-ThemesView.php
+	-PhrasesView.php
+	-XmlView.php
+
+-en Xml.
+	-frases.xml (este es el archivo de frases xml)
+
+-en config:
+	-configPdo.xml
+	

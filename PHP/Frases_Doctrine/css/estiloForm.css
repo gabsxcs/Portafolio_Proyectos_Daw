@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+.registro-header{
+    color: white;
+    text-align: center;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registro-header nav{
+	background: linear-gradient(to right, #800020, #6a0dad); 
+}
+
+
+.registroPagina {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #800020, #6a0dad); 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.registroPagina main {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registroPagina .formContenidor {
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.registroPagina h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #800020;
+}
+
+.registroPagina input, .registroPagina select, .registroPagina button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd; 
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #f5f5f5; 
+    color: #333;
+}
+
+.registroPagina button {
+    background-color: #800020; 
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registroPagina button:hover {
+    background-color: #6a0dad;
+}
+
+.registroPagina .botonSiguiente {
+    background-color: #800020; 
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registroPagina .botonSiguiente:hover {
+    background-color: #6a0dad;
+}
+
+.registroPagina .botonAtras {
+    background-color: #ddd;
+    color: #333;
+    margin-top: -5px;
+}
+
+.registroPagina .botonAtras:hover {
+    background-color: #bbb;
+}
+
+.registroPagina .situacionContenidor {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.registroPagina .situacionContenidor p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #800020; 
+}
+
+.registroPagina .situacionContenidor label {
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: #333; 
+}
+
+.registroPagina .situacionContenidor input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #800020; 
+    margin: 0;
+}
+
+.registroPagina .formPaso {
+    display: none;
+}
+
+.registroPagina .formPaso.activo {
+    display: block;
+}
+
+.registroPagina .verificacionRobot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.registroPagina .verificacionRobot label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: #333; 
+}
+
+.registroPagina .verificacionRobot input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #800020; 
+    margin: 0;
+}
+
+.registroPagina .robotImg {
+    margin: 10px;
+    max-width: 170px; 
+    width: 100%;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .registroPagina .formContenidor {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .registroPagina input, .registroPagina select, .registroPagina button {
+        font-size: 16px;
+    }
+}
+
+footer {
+    background: linear-gradient(to right, #800020, #6a0dad); ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer .socials li {
+    margin: 0 10px;
+}
+
+footer .socials a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    color: #6a0dad;
+}
+
+p.error {
+	margin-top: 12px;
+ 	margin-bottom: 20px;
+  	color: #800020;
+
+}
+
+#mensajeEnvio{
+	width: 90%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+    align-content: center;
+    color:  #800020;;
+    text-align: center;
+    margin-left: 40px;
+}
+
+
+#imagenGato {
+	margin-top: 35px;
+}

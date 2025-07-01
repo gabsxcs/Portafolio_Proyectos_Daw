@@ -1,0 +1,22 @@
+{
+	"name" : "gabi/frases-celebres-doctrine",
+	"description" : "frases celebres",
+	"type" : "project",
+	"require" : {
+		"doctrine/orm" : "2.8"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Frases\\Entity\\" : "src/Frases",
+			"Frases\\Controller\\" : "src/Controller",
+			"Frases\\Core\\" : "src/core",
+			"Frases\\Repository\\" : "src/Repository",
+			"Frases\\View\\" : "src/View"
+		}
+	},
+	"authors" : [{
+			"name" : "gabriela",
+			"email" : "gabsxc.ss@gmail.com"
+		}
+	]
+}
