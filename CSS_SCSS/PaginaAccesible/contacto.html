@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Mitología Griega - El Legado del Olimpo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/contacto.css">
+  <script src="js/main.js" defer></script>
+  <script src="js/contacto.js" defer></script>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="logo">
+      <i aria-hidden="true" class="fas fa-atlas logo-icon"></i>
+      <h2>Mitología Griega</h2>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i aria-hidden="true" class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links" role="navigation" aria-label="Menú principal">
+      <nav class="nav-links" role="navigation" aria-label="Menú principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="dioses.html">Dioses</a></li>
+          <li><a href="heroes.html">Héroes</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </nav>
+  </header>
+  
+
+  <nav class="skip-nav" role="invisible-navigation" >
+    <ul>
+      <li><a href="#hero">Saltar al encabezado</a></li>
+      <li><a href="#form-title">Saltar al formulario de contacto</a></li>
+      <li><a href="#contacto-info-titulo">Saltar a la información de contacto</a></li>
+      <li><a href="#footer">Saltar al pie de página</a></li>
+    </ul>
+  </nav>
+
+  <main role="main">
+    <section class="hero" role="region" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">Contáctanos</h1>
+        <p>¿Tienes preguntas sobre los antiguos mitos? ¿Deseas compartir tu conocimiento o sugerir nuevos contenidos? Estamos aquí para escucharte.</p>
+      </div>
+    </section>    
+  
+    <section class="section">
+      <h2 class="section-title" id="form-title">Envíanos un Mensaje desde el Olimpo</h2>
+      
+      <div id="success-message" role="alert" aria-live="assertive">
+        <p><strong>¡Mensaje enviado con éxito!</strong> Gracias por contactarnos. Te responderemos lo antes posible.</p>
+      </div>
+      
+      <div id="error-summary" role="alert" aria-live="assertive" tabindex="-1">
+        <h3>Por favor, corrige los siguientes errores:</h3>
+        <ul id="error-list"></ul>
+      </div>
+      
+      <div class="contact-container">
+        <div class="contact-form">
+          <form id="contactForm" action="#" method="post" role="form" aria-labelledby="form-title" novalidate>
+            
+            <fieldset>
+              <legend>Información Personal</legend>
+              
+              <div class="form-group">
+                <label for="nombre" class="required-field">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required 
+                       aria-describedby="nombre-hint nombre-error" aria-required="true">
+                <p id="nombre-hint" class="form-hint">Introduce tu nombre y apellidos</p>
+                <p id="nombre-error" class="form-error" role="alert">Por favor, introduce tu nombre completo.</p>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="required-field">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="form-control" required 
+                       aria-describedby="email-hint email-error" aria-required="true">
+                <p id="email-hint" class="form-hint">Ejemplo: nombre@dominio.com</p>
+                <p id="email-error" class="form-error" role="alert">Por favor, introduce un correo electrónico válido.</p>
+              </div>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Detalles del Mensaje</legend>
+              
+              <div class="form-group">
+                <label for="asunto" class="required-field">Asunto</label>
+                <input type="text" id="asunto" name="asunto" class="form-control" required 
+                       aria-describedby="asunto-hint asunto-error" aria-required="true">
+                <p id="asunto-hint" class="form-hint">Breve descripción del motivo de contacto</p>
+                <p id="asunto-error" class="form-error" role="alert">Por favor, introduce un asunto para tu mensaje.</p>
+              </div>
+              
+              <div class="form-group">
+                <label for="mensaje" class="required-field">Tu Mensaje</label>
+                <textarea id="mensaje" name="mensaje" class="form-control" required 
+                          aria-describedby="mensaje-hint mensaje-error" aria-required="true" rows="5"></textarea>
+                <p id="mensaje-hint" class="form-hint">Cuéntanos en detalle cómo podemos ayudarte</p>
+                <p id="mensaje-error" class="form-error" role="alert">Por favor, introduce tu mensaje.</p>
+              </div>
+            </fieldset>
+            
+            <fieldset>
+              <legend>Preferencias</legend>
+              
+              <div class="form-group">
+                <label for="interes">¿Qué te interesa más?</label>
+                <select id="interes" name="interes" class="form-control" aria-describedby="interes-hint">
+                  <optgroup label="Mitología">
+                    <option value="dioses">Dioses Olímpicos</option>
+                    <option value="heroes">Héroes y Semidioses</option>
+                    <option value="criaturas">Criaturas Mitológicas</option>
+                  </optgroup>
+                  <optgroup label="Narrativa">
+                    <option value="leyendas">Leyendas y Relatos</option>
+                    <option value="poemas">Poemas Épicos</option>
+                  </optgroup>
+                  <option value="otros">Otros temas</option>
+                </select>
+                <p id="interes-hint" class="form-hint">Selecciona una opción para ayudarnos a dirigir tu consulta</p>
+              </div>
+              
+              <div class="form-group">
+                <fieldset>
+                  <legend>¿Cómo prefieres recibir nuestra respuesta?</legend>
+                  <div>
+                    <input type="radio" id="contacto-email" name="contacto-preferido" value="email" checked>
+                    <label for="contacto-email">Por correo electrónico</label>
+                  </div>
+                  <div>
+                    <input type="radio" id="contacto-telefono" name="contacto-preferido" value="telefono">
+                    <label for="contacto-telefono">Por teléfono</label>
+                  </div>
+                </fieldset>
+              </div>
+            </fieldset>
+            
+            <div class="form-group">
+              <div class="checkbox-group">
+                <input type="checkbox" id="politica" name="politica" required aria-describedby="politica-error">
+                <label for="politica" class="required-field">Acepto la política de privacidad</label>
+                <p id="politica-error" class="form-error" role="alert">Debes aceptar la política de privacidad para continuar.</p>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn">Enviar Mensaje</button>
+          </form>
+        </div>
+        
+        <div class="contact-info" role="region" aria-labelledby="contacto-info-titulo">
+          <h3 id="contacto-info-titulo">Información de Contacto</h3>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <strong>Dirección</strong>
+              El Olimpo
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i aria-hidden="true" class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <strong>Email</strong>
+              info@mitologiagriega.com
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i aria-hidden="true" class="fas fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              <strong>Teléfono</strong>
+              +34 666 66 66 66
+            </div>
+          </div>
+          
+          <div class="contact-detail">
+            <div class="contact-icon">
+              <i aria-hidden="true" class="fas fa-clock"></i>
+            </div>
+            <div class="contact-text">
+              <strong>Horario</strong>
+              Lunes a Viernes: 9:00 - 18:00<br>
+              Fines de semana: Solo consultas online
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h4>Síguenos en redes sociales</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i aria-hidden="true" class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Youtube"><i aria-hidden="true" class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Pinterest"><i aria-hidden="true" class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Mitología Griega</h3>
+        <p>Un portal dedicado a preservar y compartir las fascinantes historias de la antigua Grecia, sus dioses, héroes y leyendas para las generaciones actuales y futuras.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Visita nuestra página de Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Twiiter"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Youtube"><i aria-hidden="true" class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Enlaces Rápidos</h3>
+        <a href="index.html">Inicio</a>
+        <a href="dioses.html">Dioses Olímpicos</a>
+        <a href="heroes.html">Héroes</a>
+        
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-column">
+        <h3>Recursos</h3>
+        <a href="#">Biblioteca Digital</a>
+        <a href="#">Mapa Mitológico</a>
+        <a href="#">Genealogía de Dioses</a>
+        <a href="#">Guía de Estudio</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mitología Griega. Inspirado en los antiguos mitos.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

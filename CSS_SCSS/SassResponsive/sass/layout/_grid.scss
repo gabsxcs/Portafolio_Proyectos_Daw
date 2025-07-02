@@ -1,0 +1,441 @@
+@media(min-width: 1025px) {
+    //Pagina contact
+    #containerContact {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    #Contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        grid-column: 1/4;
+        grid-row: 1/3;
+    } 
+
+    #contactTitol{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #textContact {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #formContacto{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #contactSide{
+        grid-column: 4/5;
+        grid-row: 1/3;
+    }
+
+
+    //Pagina client
+    #containerClient{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    #client {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #clientTitol{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #client1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #client2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #client3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #client4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #clientTestimoni{
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+   
+   //Pagina Home
+    #containerHome {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows: repeat(6, auto);
+        gap: 20px;
+        grid-template-areas: 
+            "header header header header header header header header header header header header"
+            "header header header header header header header header header header header header"
+            "main1  main1  main1  main1  main2  main2  main2  main2  main3  main3  main3  main3"
+            "main1  main1  main1  main1  main2  main2  main2  main2  main3  main3  main3  main3"
+            "footer footer footer footer footer footer footer footer side1  side1  side1  side1"
+            "footer footer footer footer footer footer footer footer side1  side1  side1  side1";
+    }
+
+    #headerCont {
+        grid-area: header;
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(12, 1fr); 
+        grid-template-rows: repeat(2, 0.7fr);
+        gap: 0px;
+        grid-template-areas: 
+        "header1 header1 header1 header1 header1 header1 header1 header2 header2 header2 header2 header2"
+        "header1 header1 header1 header1 header1 header1 header1 header2 header2 header2 header2 header2";
+    }
+
+    #header1 {
+        grid-area: header1;
+    }
+
+    #header2 {
+        grid-area: header2;
+    }
+
+    #main1 {
+        grid-area: main1;
+    }
+
+    #main2 {
+        grid-area: main2;
+    }
+
+    #main3 {
+        grid-area: main3;
+    }
+
+    #footer {
+        grid-area: footer;
+    }
+
+    #side1 {
+        grid-area: side1;
+    }
+}
+
+ 
+ 
+ /*---------------------------------------------MEDIA----------------------------------------*/
+ 
+ 
+@media((max-width:1024px) and (min-width:768px)) {
+
+    //Pagina Contact us
+    #containerContact {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    #Contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    } 
+
+    #contactTitol{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #textContact {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #formContacto{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #contactSide{
+        grid-column: 3/4;
+        grid-row: 1/4;
+    }
+
+    //Pagina client
+    #containerClient{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+    }
+
+    #client {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+
+    #clientTitol{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #client1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #client2{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    #client3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #client4{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+
+    #clientTestimoni{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    //Pagina Home
+    #containerHome {
+        
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+ 
+    #headerCont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, auto);
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    #header1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+ 
+
+    #header2{
+    grid-column: 2;
+    grid-row: 1;
+    }
+
+    #main1 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+ 
+ 
+    #main2 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+ 
+ 
+    #main3 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+ 
+ 
+    #side1 {
+        display: grid;
+        grid-column: 2;
+        grid-row: 3/4;
+    }
+
+    #footer {
+        grid-column: 1;
+        grid-row: 4/5;
+    }
+ 
+ 
+}
+ 
+ 
+ 
+@media(max-width:768px ) {
+
+    //Pagina Contact us
+    #containerContact {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    #Contacto{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 20px;
+        grid-column: 1/3;
+        grid-row: 1/2;
+    } 
+
+    #contactTitol{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    #textContact {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    #formContacto{
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #contactSide{
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    
+    //Pagina client
+    #containerClient{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+    }
+
+    #client {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #clientTitol{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #client1{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #client2{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #client3{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    #client4{
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+
+    #clientTestimoni{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    //Pagina Home
+    #containerHome {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+        gap: 10px;
+    }
+ 
+ 
+    #headerCont {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+
+    #header1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+ 
+
+    #header2{
+    grid-column: 1;
+    grid-row: 2;
+    }
+
+ 
+    #main1 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+ 
+ 
+    #main2 {
+        grid-column: 1;
+        grid-row: 4;
+    }
+ 
+ 
+    #main3 {
+        grid-column: 1;
+        grid-row: 5;
+    }
+ 
+ 
+    #footer {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #side1 {
+        grid-column: 1;
+        grid-row: 7;
+    }
+ 
+ 
+ }
+ 

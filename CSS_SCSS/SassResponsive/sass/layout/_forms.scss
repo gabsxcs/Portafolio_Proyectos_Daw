@@ -1,0 +1,63 @@
+#formContacto form {
+    max-width: 70%; 
+    margin-top: 10px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-field label {
+    width: 120px; 
+    margin-right: 10px;
+    color: var(--colorForm);
+}
+
+.form-field input, .form-field textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid  var(--gris5);
+    border-radius: 4px;
+    background-color: var(--formFondo);
+}
+
+.item input{
+    background-color: var(--formFondo);  
+    border: 1px solid var(--borderEmail);
+    color: var(--letraForm);
+}
+
+#message {
+    flex: 1.5; 
+    padding: 8px;
+    border-radius: 4px;
+    resize: vertical;
+    
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    background-color: var(--formFondo); 
+    outline: none; 
+    color: var(--letraForm);
+}
+
+@media (max-width: 768px) {
+    .form-field {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .form-field label {
+        margin-right: 0;
+        margin-bottom: 5px; 
+    }
+
+    .form-field input,
+    .form-field textarea {
+        width: 100%; 
+    }
+}
+

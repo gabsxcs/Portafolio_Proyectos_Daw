@@ -1,0 +1,46 @@
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    
+}
+
+#inside2 {
+    margin-top: 20px;
+}
+
+#menuPie {
+    color: var(--gris3);
+}
+
+#menuPie a {
+    margin: 10px; 
+    color: var(--gris3);
+    text-decoration: none;
+}
+
+#copyright {
+    margin: 0; 
+}
+
+hr{
+    margin-top: 0px;
+}
+
+#hrFooter {
+    margin-top: 70px;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        flex-direction: column;  
+        justify-content: center; 
+        align-items: center;    
+    }
+    
+    #menuPie, #copyright {
+        text-align: center;
+        margin: 5px 0; 
+    }
+}
+

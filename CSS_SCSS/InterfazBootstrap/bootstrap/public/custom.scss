@@ -1,0 +1,245 @@
+//color primario y segundario
+$primary: #A808A7 ;
+$secondary: #07002c; 
+$third: #ff5e57;
+$fourth: #66350D;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "third": $third,
+  "fourth": $fourth
+);
+
+//Eliminar borde circular en as esquinas
+$border-radius: 0; 
+
+
+
+@import "../node_modules/bootstrap/scss/functions";
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/accordion";
+@import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+@import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+@import "../node_modules/bootstrap/scss/toasts";
+@import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+@import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/spinners";
+@import "../node_modules/bootstrap/scss/offcanvas";
+@import "../node_modules/bootstrap/scss/placeholders";
+
+// Helpers
+@import "../node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+
+// @import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+//Punto 4 - COLOR SEARCH
+$colorSearch: (
+  'colorSearch': #642805
+);
+
+$theme-colors: map-merge($theme-colors, $colorSearch); 
+
+.btn-colorSearch {
+    border: 1px solid map-get($theme-colors, "colorSearch") !important;
+    color: map-get($theme-colors, "colorSearch");
+}
+  
+.btn-colorSearch:hover {
+      background-color: map-get($theme-colors, "colorSearch");
+} 
+
+//Punto 5
+// Crear la utilidad max-height personalizada
+$utilities: (
+  max-height: (
+    property: max-height,
+    values: (
+      '0': 0,
+      '25': 25%,
+      '50': 50%,
+      '75': 75%,
+      '100': 100%,
+      'auto': auto
+    ),
+    class: max-height,
+    responsive: true
+  )
+);
+
+.max-height-0 {
+    max-height: 0!important;
+}
+
+.max-height-25 {
+    max-height: 25% !important;
+}
+
+.max-height-50 {
+    max-height: 50% !important;
+}
+
+.max-height-75 {
+    max-height: 75% !important;
+}
+
+.max-height-100 {
+    max-height: 100% !important;
+}
+
+.max-height-auto {
+    max-height: auto !important;
+}
+
+//Esto para que la imagen tambien se haga pequeña, que ocupe el campo del div 
+.carousel-inner img {
+    object-fit: cover; 
+    height: 100%;
+}
+  
+.carousel-inner {
+    height: 100%; 
+}
+
+
+//Punto 6
+
+// boton de share
+.btn-share {
+    @extend .btn;
+    background-color: $primary;
+    color: white;
+
+    &:hover{
+        background-color: darken($primary, 10%); 
+    }
+}
+  
+//Punto 7
+.header-tabla th{ 
+    background-color: $primary !important; 
+    color: #fff;
+}
+
+//punto 8, links del footer
+.footer-links a:not(.active):not(.disabled) {
+    color: #fff !important;
+}
+
+
+//una clase para pintar los titulos de los modals y el offcanvas de notificaciones
+.header-titulo{ 
+    background-color: $primary !important; 
+    color: #fff;
+}
+
+.header-titulo .btn-close{ 
+    filter: invert(100%);
+    color: #fff;
+}
+
+
+//Clases y modificaciones para la segunda pagina
+
+//Modificar la clase de accordion para que use otro color y no el primario
+// Personalización del acordeón
+.accordion button {
+    &:not(.collapsed) {
+      background-color: $fourth;
+      border-color: $fourth;
+      color: #fff;
+    }
+}
+
+.accordion-button:focus {
+    border-color: $fourth; 
+    box-shadow: 0 0 0 0.25rem $fourth;
+}
+
+.accordion code {
+    color: $fourth
+}
+
+
+//Una clase para personalizar el form
+.form-personalizado { 
+    border: 4px solid $fourth; 
+    border-radius: 15px; 
+    padding: 20px; 
+    align-items: center; 
+    margin: 0 auto;
+    margin-bottom: 30px;
+} 
+
+.form-personalizado .row {
+    gap: 15px;
+}
+
+.form-personalizado .form-control, .form-select {
+    max-width: 100%;
+    margin-bottom: 10px; 
+}
+
+.form-personalizado button {
+    background-color: $third;
+    border: 4px solid $third;
+    color: white;
+    display: block; 
+    margin: 20px auto; 
+    padding: 10px 20px; 
+}
+
+.form-personalizado button:hover {
+    background-color: darken($third, 5%);
+    color: white;
+}
+
+.form-personalizado .form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+  
+.form-personalizado .form-control:focus, .form-select:focus {
+    border-color: $fourth; 
+    box-shadow: 0 0 0 0.25rem rgba($third, 0.25); 
+}
+
+.form-personalizado .form-check-input:checked {
+    background-color: $fourth; 
+    border-color: $fourth;
+}
+
+  

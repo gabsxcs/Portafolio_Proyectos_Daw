@@ -1,0 +1,361 @@
+
+.heroes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    background-color: white;
+    box-shadow: var(--shadow-soft);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .heroes-table thead {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+  }
+
+  .heroes-table th, 
+  .heroes-table td {
+    padding: 1em;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .heroes-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .heroes-table .hero-icon {
+    color: var(--color-accent);
+    margin-right: 8px;
+  }
+
+  .video-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 3em;
+    margin: 4em 0;
+    box-shadow: var(--shadow-soft);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-container {
+    position: relative;
+    max-width: 80%;
+    margin: 2em auto;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: var(--shadow-medium);
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  .quote-section {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('https://res.cloudinary.com/dhw8hy9el/image/upload/v1745937513/author-homer-sculpture-odyssey-mosaic-ulysse_yz5ci1.webp');
+    background-size: cover;
+    background-position: center;
+    color: var(--color-text-light);
+    padding: 6em 2em;
+    text-align: center;
+    margin: 4em 0;
+    background-color: #1a1105;
+  }
+
+  .quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .quote {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1em;
+  }
+
+  .quote-original {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: var(--color-accent);
+  }
+
+  .quote-author {
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .heroes-table {
+      font-size: 0.9em;
+    }
+    
+    .heroes-table th, 
+    .heroes-table td {
+      padding: 0.8em;
+    }
+    
+    .video-section {
+      padding: 2em 1em;
+    }
+    
+    .quote {
+      font-size: 1.4em;
+    }
+  }
+
+  .map-section {
+    background-color: var(--color-light);
+    padding: 6em 5%;
+  }
+  
+  .map-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 3em;
+  }
+  
+  .map-wrapper {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+  }
+  
+  .map-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .mythological-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+  }
+  
+  .map-wrapper:hover .mythological-map {
+    transform: scale(1.02);
+  }
+  
+  .map-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 40%, transparent 70%);
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+  }
+  
+  .map-overlay h3 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    max-width: 50%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  
+  .map-overlay p {
+    max-width: 40%;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  }
+  
+  .map-legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5em;
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .legend-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: block;
+  }
+  
+  .legend-icon.olympus {
+    background-color: #d4af37; 
+  }
+  
+  .legend-icon.underworld {
+    background-color: #2e0854; 
+  }
+  
+  .legend-icon.temple {
+    background-color: #b5651d; 
+  }
+  
+  .legend-icon.battle {
+    background-color: #a41515; 
+  }
+  
+  .legend-icon.labyrinth {
+    background-color: #3a3a3a; 
+  }
+  
+  .legend-icon.sea {
+    background-color: #1e81b0; 
+  }
+  
+  .alexander-section {
+    background-color: white;
+    padding: 6em 5%;
+  }
+  
+  .alexander-container {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 2em;
+  }
+  
+  .alexander-text {
+    flex: 1;
+  }
+  
+  .alexander-text p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+  }
+  
+  .alexander-image-container {
+    flex: 1;
+  }
+  
+  .image-frame {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-medium);
+    transition: var(--transition);
+  }
+  
+  .image-frame:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .alexander-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: var(--transition);
+  }
+  
+  .image-frame:hover .alexander-image {
+    transform: scale(1.05);
+  }
+  
+  .image-caption {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: #211f1c;
+    padding: 2em;
+    color: white;
+    transform: translateY(70%);
+    transition: var(--transition);
+  }
+  
+  .image-frame:hover .image-caption {
+    transform: translateY(-50px);
+  }
+  
+  .image-caption h3 {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+  }
+  
+  .ver-mas {
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: 500;
+    color: var(--color-accent);
+  }
+  
+  @media (max-width: 992px) {
+    .alexander-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .alexander-image-container {
+      margin-top: 2em;
+      max-width: 80%;
+    }
+    
+    .map-overlay h3, .map-overlay p {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .map-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0.4) 70%, transparent);
+      padding: 1.5em;
+      justify-content: flex-end;
+    }
+    
+    .map-overlay h3 {
+      font-size: 1.5em;
+      max-width: 100%;
+    }
+    
+    .map-overlay p {
+      max-width: 100%;
+    }
+    
+    .alexander-image-container {
+      max-width: 100%;
+    }
+  }
+
+
+  .heroes-table th:focus,
+  .heroes-table td:focus {  
+    z-index: 2;
+    outline: 2px dashed #ff0000;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 3px #4D90FE;
+  }
+
+  .section-title:focus,
+.quote-original:focus,
+.quote:focus,
+.quote-author:focus {
+  outline: 3px solid #ff0000;
+  outline-offset: 3px;
+  border-radius: 4px;
+}

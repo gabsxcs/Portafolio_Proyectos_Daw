@@ -1,0 +1,59 @@
+html{
+    min-height: 100%;
+}
+
+body {
+    background: var(--background);
+    height: auto;
+    line-height: 1.5;
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    min-width: 25em;
+}
+
+@media(min-width:1025px){
+ body{
+    background-repeat: no-repeat;
+ }
+}
+
+h2 {
+    font-family: 'CenturyGothic';
+    font-size: 21px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: var(--gris11);
+}
+
+/* Box sizing */
+#container {
+    box-sizing: border-box;
+    padding: 1px; 
+    margin: auto;
+}
+
+
+//Pagina cliente
+#containerClient{
+    background-color: var(--background-contents);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+h3{
+    color: var(--h3Title);
+    font-family: 'Arial', sans-serif;
+    font-weight: bold; 
+}
+
+//Pagina contact us
+#containerContact{
+    background-color: var(--background-contents);
+    padding: 20px;
+    border-radius: 20px;
+}

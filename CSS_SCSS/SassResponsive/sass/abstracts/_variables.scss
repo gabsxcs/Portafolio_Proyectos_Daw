@@ -1,0 +1,90 @@
+:root{
+    --naranja: #ec8a1b; 
+    --naranjaClarito: #ffc787;
+    --naranja3: #EF9F46; //naranja gradient menu
+    --naranja4: #F3CEA5; //naranja gradient menu claro
+    --blanco: #fff;
+    --blanco2: #FDFDFD; //Gradient fin pagina
+    --gris1: #ECECEC;
+    --gris2: #858585;
+    --gris3: #666565; 
+    --gris4: #BCBCBC; //gris titulo h2 header
+    --gris5: #E4E4E4; //Gradient start body
+    --gris6: #DBDBDB;
+    --gris7: #d0d0d0;
+    --gris8: #9A9B9C; //gris footer
+    --gris9: #E5E6E5; //background gris img client
+    --gris10: #666666; //Gris de h3 clients
+    --gris11: #9A9B9C; //gris p
+    --gris12: #0a0a0a;
+    --gris13: #232323;
+    --gris14: #dddddd;
+    --negro: #000000;
+    --negro2: #101010;
+
+
+    //Colores modo oscuro
+    --azul: #4169E1;
+    --azul1: #5b84ff;
+    --azul2: #1747d7;
+    --azul3: rgb(21, 21, 38);
+    
+    &.light{
+        --primary-color: var(--naranja);
+
+        --background: linear-gradient(var(--gris5), var(--blanco2));
+        --tituloInfo: var(--negro);
+        --background-contents: var(--blanco);
+        --gris-contrast: var(--gris10);
+        --gris-header1: var(--gris4);
+        --gradient-menu: linear-gradient(var(--naranja4), var(--naranja3));
+        --border: var(--negro);
+        --menuText: var(--gris13);
+        --fondoMenuDesplegable: var(--naranjaClarito);
+        --borderMenu: var(--primary-color);
+        --CardMain: linear-gradient(var(--gris1), var(--gris14));
+        --fotoOjo: url(../img/eye.png);
+        --borderCard: var(--blanco);
+        --tittleCard: var(--gris2);
+        --h3Title: var(--gris10);
+        --backgroundButton: var(--gris6);
+        --textButton: var(--gris3);
+        --buttonHover: var(--gris7);
+        --borderImatgeClient: var(--gris9);
+        --colorForm: var(--gris10);
+        --h1Color: var(--negro);
+        --formFondo: var(--gris5);
+        --borderEmail: var(--gris8);
+        --letraForm: var(--negra);
+    }
+
+    &.dark{
+        --primary-color: var(--azul);
+
+        --background: linear-gradient(var(--negro), var(--gris12));
+        --tituloInfo: var(--blanco);
+        --background-contents: var(--gris13);
+        --gris-header1: var(--gris4);
+        --gradient-menu: linear-gradient(var(--azul1), var(--azul2));
+        --border: var(--blanco);
+        --menuText: var(--gris1);
+        --fondoMenuDesplegable: var(--azul3);
+        --borderMenu: var(--primary-color);
+        --CardMain:linear-gradient(var(--negro2), var(--gris12));
+        --fotoOjo: url(../img/eyeAzul.png);
+        --borderCard: var(--gris13);
+        --tittleCard: var(--gris1);
+        --h3Title: var(--gris1);
+        --backgroundButton: var(--negro2);
+        --textButton: var(--gris1);
+        --buttonHover: var(--gris13);
+        --borderImatgeClient: var(--gris10);
+        --colorForm: var(--gris1);
+        --h1Color: var(--blanco2);
+        --formFondo: var(--negro2);
+        --borderEmail: var(--blanco2);
+        --letraForm: var(--blanco);
+
+    }
+
+}

@@ -1,0 +1,24 @@
+.container {
+    padding: 5em 5%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.card:focus {
+  box-shadow: 0 0 0 3px #4D90FE;
+  transform: translateY(-5px);
+  transition: all 0.3s ease;
+}
+
+  @media (max-width: 576px) {
+
+  
+    .card-content h3 {
+      font-size: 1.2em;
+    }
+  
+    .card-attributes {
+      flex-wrap: wrap;
+    }
+  
+  }

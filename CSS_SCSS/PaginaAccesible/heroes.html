@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Héroes Mitológicos | El Legado del Olimpo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/general.css">
+  <link rel="stylesheet" href="css/heroesEstilos.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+  <link rel="stylesheet" href="build/ableplayer.min.css" type="text/css"/>
+  <script src="build/ableplayer.min.js"></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header role="banner">
+    <div class="logo">
+      <i aria-hidden="true" class="fas fa-atlas logo-icon"></i>
+      <h2>Mitología Griega</h2>
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menú">
+      <i aria-hidden="true" class="fas fa-bars"></i>
+    </button>
+    <nav class="nav-links" role="navigation" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="dioses.html">Dioses</a></li>
+        <li><a href="heroes.html" aria-current="page">Héroes</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav class="skip-nav" role="navigation" aria-label="Navegación rápida por secciones">
+    <ul>
+      <li><a href="#main-content">Saltar al contenido principal</a></li>
+      <li><a href="#hero">Saltar a la cabecera principal</a></li>
+      <li><a href="#tabla-heroes">Saltar a la tabla de héroes</a></li>
+      <li><a href="#video-heroes">Saltar a la sección de video</a></li>
+      <li><a href="#frase-heroes">Saltar a la frase inspiradora</a></li>
+    </ul>
+  </nav>
+  
+  <main id="main-content">
+    <section class="hero" role="region" aria-labelledby="hero-title" id="hero">
+      <div class="hero-content">
+        <h1 id="hero-title">Héroes de Leyenda</h1>
+        <p>Descubre las hazañas y aventuras de los grandes héroes de la mitología griega que desafiaron a dioses y monstruos</p>
+        <a href="#tabla-heroes" class="btn">Explorar Héroes</a>
+      </div>
+    </section>
+  
+    <section class="intro section" role="region" aria-labelledby="intro-title">
+      <div class="intro-content">
+        <div class="intro-text">
+          <h2 class="section-title" id="intro-title">Los Semidioses y Mortales Legendarios</h2>
+          <p>En la mitología griega, los héroes ocupan un lugar especial entre dioses y mortales. Dotados de habilidades extraordinarias y a menudo de linaje divino, estos valientes personajes emprendieron peligrosas misiones, derrotaron temibles monstruos y desafiaron incluso a los dioses del Olimpo.</p>
+          <p>Sus historias, llenas de valor, tragedia y redención, han inspirado a la humanidad durante milenios y continúan siendo ejemplos universales de las virtudes y defectos humanos llevados al extremo.</p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="heroes-list section" role="region" aria-labelledby="heroes-title" id="tabla-heroes">
+      <h2 class="section-title" id="heroes-title">Los Grandes Héroes</h2>
+      <div class="table-container">
+        <div class="table-container">
+          <table  aria-describedby="tabla-desc"  class="heroes-table" aria-label="Tabla de héroes mitológicos griegos con sus orígenes, hazañas y deidades protectoras" tabindex="0">
+            <caption class="sr-only">Lista de héroes griegos, su origen, hazañas y deidades protectoras</caption>
+            <thead>
+              <tr>
+                <th id="col-heroe" scope="col">Héroe</th>
+                <th id="col-origen" scope="col">Origen</th>
+                <th id="col-hazanas" scope="col">Hazañas Principales</th>
+                <th id="col-patron" scope="col">Patronazgo Divino</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr tabindex="0">
+                <th id="heracles" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-shield-alt hero-icon"></i>
+                  <span>Heracles (Hércules)</span>
+                </th>
+                <td headers="col-origen heracles">Tebas</td>
+                <td headers="col-hazanas heracles">Los Doce Trabajos, derrotó a la Hidra de Lerna</td>
+                <td headers="col-patron heracles">Zeus</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="teseo" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-horse hero-icon"></i>
+                  <span>Teseo</span>
+                </th>
+                <td headers="col-origen teseo">Atenas</td>
+                <td headers="col-hazanas teseo">Mató al Minotauro, unificó el Ática</td>
+                <td headers="col-patron teseo">Poseidón</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="perseo" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-dragon hero-icon"></i>
+                  <span>Perseo</span>
+                </th>
+                <td headers="col-origen perseo">Argos</td>
+                <td headers="col-hazanas perseo">Decapitó a Medusa, rescató a Andrómeda</td>
+                <td headers="col-patron perseo">Atenea</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="jason" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-ship hero-icon"></i>
+                  <span>Jasón</span>
+                </th>
+                <td headers="col-origen jason">Yolco</td>
+                <td headers="col-hazanas jason">Lideró a los Argonautas, obtuvo el Vellocino de Oro</td>
+                <td headers="col-patron jason">Hera</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="aquiles" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-wind hero-icon"></i>
+                  <span>Aquiles</span>
+                </th>
+                <td headers="col-origen aquiles">Ftía</td>
+                <td headers="col-hazanas aquiles">Guerra de Troya, derrotó a Héctor</td>
+                <td headers="col-patron aquiles">Tetis</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="odiseo" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-brain hero-icon"></i>
+                  <span>Odiseo</span>
+                </th>
+                <td headers="col-origen odiseo">Ítaca</td>
+                <td headers="col-hazanas odiseo">Ideó el Caballo de Troya, viaje épico de regreso a casa</td>
+                <td headers="col-patron odiseo">Atenea</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="belerofonte" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-feather-alt hero-icon"></i>
+                  <span>Belerofonte</span>
+                </th>
+                <td headers="col-origen belerofonte">Corinto</td>
+                <td headers="col-hazanas belerofonte">Montó a Pegaso, mató a la Quimera</td>
+                <td headers="col-patron belerofonte">Poseidón</td>
+              </tr>
+              <tr tabindex="0">
+                <th id="orfeo" headers="col-heroe" scope="row">
+                  <i aria-hidden="true" class="fas fa-music hero-icon"></i>
+                  <span>Orfeo</span>
+                </th>
+                <td headers="col-origen orfeo">Tracia</td>
+                <td headers="col-hazanas orfeo">Descendió al Inframundo por su amada Eurídice</td>
+                <td headers="col-patron orfeo">Apolo</td>
+              </tr>
+            </tbody>
+          </table>
+          <p id="tabla-desc" class="sr-only">
+            Esta tabla compara 8 héroes griegos destacados, incluyendo Heracles, Teseo y Odiseo. 
+            Proporciona información sobre su ciudad de origen, hazañas legendarias (como los Doce Trabajos de Heracles o el Caballo de Troya de Odiseo) 
+            y su relación con deidades protectoras (ej: Zeus para Heracles, Atenea para Odiseo). 
+            Las filas son navegables con teclado usando Tab.
+          </p>
+        </div>
+      </div>
+    </section>
+  
+    <section class="video-section" role="region" aria-labelledby="video-title" id="video-heroes" tabindex="0">
+      <h2 class="section-title" id="video-title">La Odisea</h2>
+      <p class="section-description">Sumérgete en la fascinante travesía de Odiseo en su regreso a casa a través de un musical.</p>
+      <video id="video1" data-able-player preload="auto" width="640" height="360" controls>
+        <source type="video/mp4" src="https://res.cloudinary.com/dhw8hy9el/video/upload/v1746313400/The_Horse_and_The_Infant_Epic_the_musical_Animatic_FLASH_WARNING_ctpxrk.mp4">
+        <track kind="captions" src="video/subtitulos.vtt" srclang="en" label="Ingles">
+        <track kind="captions" src="video/subtitulos_es.vtt" srclang="es" label="Español">
+        <track kind="descriptions" src="video/descripcion.vtt" srclang="es" label="Descripción de audio">
+        <track kind="metadata" src="video/transcripcion.vtt" srclang="es" label="Transcripción completa">
+      </video>
+
+      <div id="transcript" role="region" aria-labelledby="transcript-heading"></div>
+    </section>
+  
+    <section class="quote-section" role="region" aria-labelledby="quote-title" id="frase-heroes">
+      <div class="quote-container" tabindex="0">
+        <h2 class="section-title" id="quote-title" tabindex="0">Palabras de Sabiduría Heroica</h2>
+        <blockquote class="quote-original" tabindex="0" lang="el">
+          "Κλέος ἄφθιτον ἐστί· τὸ καὶ πολλοί ἀγαθοί τε καὶ ἄλκιμοι ἄνδρες ἵενται ἐπὶ χθονὶ πουλυβοτείρῃ."
+        </blockquote>
+        <blockquote class="quote" tabindex="0">
+          "La gloria inmortal es aquello por lo que muchos hombres valientes y nobles luchan sobre la fértil tierra."
+        </blockquote>
+        <p class="quote-author" tabindex="0">— Homero, La Ilíada</p>
+      </div>
+    </section>
+
+    <section class="map-section section" tabindex="0">
+      <h2 class="section-title">Mapa del Mundo Mitológico</h2>
+      <div class="map-container">
+        <div class="map-wrapper">
+          <img  aria-describedby="mapa-desc" src="https://res.cloudinary.com/dhw8hy9el/image/upload/v1746275580/9y7ogyu16gv81_oulutz.webp" alt="Mapa del Mundo Mitológico Griego" class="mythological-map">
+          <div id="mapa-desc" class="sr-only">
+            Mapa detallado de la geografía mitológica griega, que incluye:
+            - El Monte Olimpo (parte superior) como morada de los dioses.
+            - El Inframundo (parte inferior) gobernado por Hades.
+            - Ubicaciones clave como Atenas, Tebas y Creta.
+            - Rutas de viajes heroicos (ej: la ruta de Jasón y los Argonautas).
+            - Territorios de influencia divina (azul para Poseidón, verde para Deméter).
+          </div>
+          <div class="map-overlay" tabindex="0">
+            
+          </div>
+        </div>
+        <div class="map-legend">
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon olympus"></span>
+            <p>Monte Olimpo - Hogar de los Dioses</p>
+          </div>
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon underworld"></span>
+            <p>Inframundo - Reino de Hades</p>
+          </div>
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon temple"></span>
+            <p>Templos y Santuarios</p>
+          </div>
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon battle"></span>
+            <p>Lugares de Batallas Míticas</p>
+          </div>
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon labyrinth"></span>
+            <p>Laberintos y Pruebas Heroicas</p>
+          </div>
+          <div class="legend-item" tabindex="0">
+            <span class="legend-icon sea"></span>
+            <p>Dominios de Poseidón</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="alexander-section section" tabindex="0">
+      <h2 class="section-title">Alejandro Magno: El Legado Helénico</h2>
+      <div class="alexander-container">
+        <div class="alexander-text">
+          <p>Descubre la fascinante historia de Alejandro Magno, el conquistador macedonio que extendió la cultura helénica y la mitología griega por tres continentes, creando un puente entre el mito y la historia.</p>
+          <p>Hijo de Filipo II y autoproclamado descendiente de Heracles, Alejandro no solo conquistó el mundo conocido sino que difundió las tradiciones mitológicas griegas, forjando su propia leyenda que perdura hasta nuestros días.</p>
+          <p>Su madre, Olimpia, perteneciente al reino de Epiro, fue una gran influencia en la vida de Alejandro. Reforzando su confianza en si mismo afirmandole ser descendiente del gran Aquiles.</p>
+        </div>
+        <div class="alexander-image-container">
+          <a href="https://www.nationalgeographic.es/historia/quien-fue-alejandro-magno">
+            <div class="image-frame" tabindex="0">
+              <img src="https://res.cloudinary.com/dhw8hy9el/image/upload/t_square/v1746033395/Alexander-the-Great-detail-painting-Porus-Charles_x6yjql.webp" alt="Alejandro Magno: El conquistador que se convirtió en leyenda" class="alexander-image">
+              <div class="image-caption">
+                <h3>La Leyenda de Alejandro</h3>
+                <p>Explora la vida del rey que fue venerado como un dios</p>
+                <span class="ver-mas">Ver más detalles</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  
+    <section class="explora-section" role="region" aria-labelledby="explora-title">
+      <div class="explora-content">
+        <h2 id="explora-title">Descubre Más Sobre el Mundo Heroico</h2>
+        <p>El viaje por el mundo de los héroes griegos continúa. Explora los artefactos, lugares sagrados y el legado cultural de estos íconos mitológicos.</p>
+        <div class="explora">
+          <a href="#" class="btn " tabindex="0">Explorar Artefactos Heroicos</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Mitología Griega</h3>
+        <p>Un portal dedicado a preservar y compartir las fascinantes historias de la antigua Grecia, sus dioses, héroes y leyendas para las generaciones actuales y futuras.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Visita nuestra página de Facebook"><i aria-hidden="true" class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Twiiter"><i aria-hidden="true" class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Instagram"><i aria-hidden="true" class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Visita nuestra página de Youtube"><i aria-hidden="true" class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Enlaces Rápidos</h3>
+        <a href="index.html">Inicio</a>
+        <a href="dioses.html">Dioses Olímpicos</a>
+        <a href="heroes.html">Héroes</a>
+        
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <div class="footer-column">
+        <h3>Recursos</h3>
+        <a href="#">Biblioteca Digital</a>
+        <a href="#">Mapa Mitológico</a>
+        <a href="#">Genealogía de Héroes</a>
+        <a href="#">Guía de Estudio</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Mitología Griega. Inspirado en los antiguos mitos.</p>
+    </div>
+  </footer>
+</body>
+</html>
