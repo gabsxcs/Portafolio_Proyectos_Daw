@@ -24,9 +24,6 @@ Este proyecto es una página web dedicada a la mitología griega, desarrollada c
 - **Tablas accesibles**:
   - Encabezados con `scope`, descripciones con `aria-describedby`.
   - `<caption>` oculto para lectores con `sr-only`.
-- **Multimedia accesible** con **AblePlayer**:
-  - Soporte de subtítulos, descripciones y transcripciones.
-  - Control por teclado y compatible con lectores de pantalla.
 - **Contraste AAA** y foco visible.
 - Atributos `lang` para contenido multilingüe.
 
@@ -47,7 +44,6 @@ Este proyecto es una página web dedicada a la mitología griega, desarrollada c
 
 - Validación: **WAVE**, **AXE DevTools**
 - Lectores de pantalla: **NVDA**, **ChromeVox**
-- Reproductor multimedia: **AblePlayer**
 
 
 ---
